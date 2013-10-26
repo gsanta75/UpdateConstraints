@@ -18,6 +18,7 @@
 		6AC6A3C2181BEBA500ECAC44 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC6A3C1181BEBA500ECAC44 /* Default-568h@2x.png */; };
 		6AC6A3C5181BEBA500ECAC44 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC6A3C3181BEBA500ECAC44 /* MainStoryboard.storyboard */; };
 		6AC6A3C8181BEBA500ECAC44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6A3C7181BEBA500ECAC44 /* ViewController.m */; };
+		6AC6A3D0181BEC0500ECAC44 /* myView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6A3CF181BEC0500ECAC44 /* myView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		6AC6A3C4181BEBA500ECAC44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6AC6A3C6181BEBA500ECAC44 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6AC6A3C7181BEBA500ECAC44 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6AC6A3CE181BEC0500ECAC44 /* myView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myView.h; sourceTree = "<group>"; };
+		6AC6A3CF181BEC0500ECAC44 /* myView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				6AC6A3C3181BEBA500ECAC44 /* MainStoryboard.storyboard */,
 				6AC6A3C6181BEBA500ECAC44 /* ViewController.h */,
 				6AC6A3C7181BEBA500ECAC44 /* ViewController.m */,
+				6AC6A3CE181BEC0500ECAC44 /* myView.h */,
+				6AC6A3CF181BEC0500ECAC44 /* myView.m */,
 				6AC6A3B2181BEBA500ECAC44 /* Supporting Files */,
 			);
 			path = UpdateConstraints;
@@ -176,6 +181,7 @@
 				6AC6A3B8181BEBA500ECAC44 /* main.m in Sources */,
 				6AC6A3BC181BEBA500ECAC44 /* AppDelegate.m in Sources */,
 				6AC6A3C8181BEBA500ECAC44 /* ViewController.m in Sources */,
+				6AC6A3D0181BEC0500ECAC44 /* myView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
