@@ -11,11 +11,32 @@
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9e-VA-WzA">
+                                <color key="backgroundColor" red="0.56621518339999999" green="0.078420395239999996" blue="0.094068467629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" type="user" id="Pcg-bH-a8R"/>
+                                    <constraint firstAttribute="height" constant="200" type="user" id="wt2-kI-gEa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o9e-VA-WzA" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="user" id="J6f-O4-7xq"/>
+                            <constraint firstItem="o9e-VA-WzA" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="user" id="S2b-86-zEg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="squareCenterX" destination="J6f-O4-7xq" id="V5i-V4-A7i"/>
+                        <outlet property="squareCenterY" destination="S2b-86-zEg" id="1HD-7w-fJz"/>
+                        <outlet property="squareHeight" destination="wt2-kI-gEa" id="mEz-Gq-aH0"/>
+                        <outlet property="squareView" destination="o9e-VA-WzA" id="L5k-Ft-6t2"/>
+                        <outlet property="squareWidth" destination="Pcg-bH-a8R" id="QoR-iu-8qP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="157" y="21"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
