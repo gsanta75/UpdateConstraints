@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AnR-ci-sXW"/>
+                        <viewControllerLayoutGuide type="bottom" id="1dK-G9-Ao1"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9e-VA-WzA">
+                                <rect key="frame" x="60" y="140" width="200" height="200"/>
                                 <color key="backgroundColor" red="0.56621518339999999" green="0.078420395239999996" blue="0.094068467629999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" type="user" id="Pcg-bH-a8R"/>
-                                    <constraint firstAttribute="height" constant="200" type="user" id="wt2-kI-gEa"/>
+                                    <constraint firstAttribute="width" constant="200" id="Pcg-bH-a8R"/>
+                                    <constraint firstAttribute="height" constant="200" id="wt2-kI-gEa"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="o9e-VA-WzA" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="user" id="J6f-O4-7xq"/>
-                            <constraint firstItem="o9e-VA-WzA" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="user" id="S2b-86-zEg"/>
+                            <constraint firstItem="o9e-VA-WzA" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" id="J6f-O4-7xq"/>
+                            <constraint firstItem="o9e-VA-WzA" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" id="S2b-86-zEg"/>
                         </constraints>
                     </view>
                     <connections>
