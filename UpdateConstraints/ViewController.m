@@ -39,10 +39,10 @@
         [self.squareView removeConstraints:[self.squareView constraints]];
         [self.view removeConstraints:[self.view constraints]];
         
-        NSDictionary *myViews = @{@"squareView" : self.squareView};
+        NSDictionary *myView = @{@"squareView" : self.squareView};
         
-        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[squareView]|" options:0 metrics:nil views:myViews]];
-        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[squareView]|" options:0 metrics:nil views:myViews]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[squareView]|" options:0 metrics:nil views:myView]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[squareView]|" options:0 metrics:nil views:myView]];
         
     }
     
