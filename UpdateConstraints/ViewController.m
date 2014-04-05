@@ -36,26 +36,29 @@
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     if(UIInterfaceOrientationIsLandscape(toInterfaceOrientation)){
-        [self.squareView removeConstraints:[self.squareView constraints]];
-        [self.view removeConstraints:[self.view constraints]];
         
         NSDictionary *myView = @{@"squareView" : self.squareView};
-        
+        [self removeAllConstraints];
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[squareView]|" options:0 metrics:nil views:myView]];
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[squareView]|" options:0 metrics:nil views:myView]];
         
     }
     
     if(UIInterfaceOrientationIsPortrait(toInterfaceOrientation)){
-        [self.squareView removeConstraints:[self.squareView constraints]];
-        [self.view removeConstraints:[self.view constraints]];
-        
+        [self removeAllConstraints];
         [self.squareView addConstraints:squareDimension];
         [self.view addConstraints:squarePosition];
         
     }
 
 }
+
+-(void)removeAllConstraints
+{
+    [self.squareView removeConstraints:[self.squareView constraints]];
+    [self.view removeConstraints:[self.view constraints]];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
