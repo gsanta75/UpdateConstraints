@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0A801A18F01CCB00131F49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A0A801918F01CCB00131F49 /* Images.xcassets */; };
 		6AC6A3AC181BEBA500ECAC44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6A3AB181BEBA500ECAC44 /* UIKit.framework */; };
 		6AC6A3AE181BEBA500ECAC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6A3AD181BEBA500ECAC44 /* Foundation.framework */; };
 		6AC6A3B0181BEBA500ECAC44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6A3AF181BEBA500ECAC44 /* CoreGraphics.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A0A801918F01CCB00131F49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6AC6A3A8181BEBA500ECAC44 /* UpdateConstraints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpdateConstraints.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AC6A3AB181BEBA500ECAC44 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6AC6A3AD181BEBA500ECAC44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,6 +95,7 @@
 				6AC6A3C7181BEBA500ECAC44 /* ViewController.m */,
 				6AC6A3CE181BEC0500ECAC44 /* myView.h */,
 				6AC6A3CF181BEC0500ECAC44 /* myView.m */,
+				6A0A801918F01CCB00131F49 /* Images.xcassets */,
 				6AC6A3B2181BEBA500ECAC44 /* Supporting Files */,
 			);
 			path = UpdateConstraints;
@@ -166,6 +169,7 @@
 				6AC6A3B6181BEBA500ECAC44 /* InfoPlist.strings in Resources */,
 				6AC6A3BE181BEBA500ECAC44 /* Default.png in Resources */,
 				6AC6A3C0181BEBA500ECAC44 /* Default@2x.png in Resources */,
+				6A0A801A18F01CCB00131F49 /* Images.xcassets in Resources */,
 				6AC6A3C2181BEBA500ECAC44 /* Default-568h@2x.png in Resources */,
 				6AC6A3C5181BEBA500ECAC44 /* MainStoryboard.storyboard in Resources */,
 			);
@@ -266,9 +270,12 @@
 		6AC6A3CC181BEBA500ECAC44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UpdateConstraints/UpdateConstraints-Prefix.pch";
 				INFOPLIST_FILE = "UpdateConstraints/UpdateConstraints-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -277,9 +284,12 @@
 		6AC6A3CD181BEBA500ECAC44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UpdateConstraints/UpdateConstraints-Prefix.pch";
 				INFOPLIST_FILE = "UpdateConstraints/UpdateConstraints-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -304,6 +314,7 @@
 				6AC6A3CD181BEBA500ECAC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

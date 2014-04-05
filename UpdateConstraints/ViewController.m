@@ -45,23 +45,27 @@
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     if(UIInterfaceOrientationIsLandscape(toInterfaceOrientation)){
-        [square removeConstraints:[square constraints]];
-        [self.view removeConstraints:[self.view constraints]];
         
+        [self removeAllConstraints];
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[square]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(square)]];
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[square]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(square)]];
     }
     
     if(UIInterfaceOrientationIsPortrait(toInterfaceOrientation)){
-        [square removeConstraints:[square constraints]];
-        [self.view removeConstraints:[self.view constraints]];
-        
+
+        [self removeAllConstraints];
         [square addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[square(200)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(square)]];
         
         [square addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[square(200)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(square)]];
         
         [self.view addConstraints:squareCenterPosition];
     }
+}
+
+-(void)removeAllConstraints
+{
+    [square removeConstraints:[square constraints]];
+    [self.view removeConstraints:[self.view constraints]];
 }
 
 - (void)didReceiveMemoryWarning
